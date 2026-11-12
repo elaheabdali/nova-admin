@@ -13,7 +13,6 @@ import { Button, Field, Input, Alert } from '../Shared/primitives';
 import { useTranslation } from '../Shared/useTranslation';
 import { ROUTES } from '../Routes/routePaths';
 
-<<<<<<< HEAD
 const Page = styled.main`
   min-height: 100vh;
   display: grid;
@@ -87,7 +86,6 @@ const Foot = styled.div`
     font-weight: 700;
   }
 `;
-=======
 const Page = styled.main`min-height:100vh;display:grid;place-items:center;padding:28px;background:radial-gradient(circle at 18% 15%,#f9e6da 0,transparent 27%),${({theme})=>theme.colors.bg};`;
 const Panel = styled.section`width:min(100%,440px);background:${({theme})=>theme.colors.surface};border:1px solid ${({theme})=>theme.colors.border};border-radius:24px;padding:38px;box-shadow:0 22px 70px #13243a12;`;
 const Brand = styled.div`display:flex;align-items:center;justify-content:center;gap:9px;font-size:30px;font-weight:900;letter-spacing:1px;color:${({theme})=>theme.colors.primary};.bag{color:${({theme})=>theme.colors.accent}}`;
@@ -95,7 +93,6 @@ const Heading = styled.div`text-align:center;margin:25px 0 30px;h1{font-size:21p
 const FormBody = styled(Form)`display:grid;gap:17px;`;
 const InputIcon = styled.div`position:relative;svg{position:absolute;inset-inline-start:13px;top:13px;color:${({theme})=>theme.colors.muted}} input{padding-inline-start:42px}`;
 const Foot = styled.div`display:flex;justify-content:space-between;margin-top:23px;font-size:12px;color:${({theme})=>theme.colors.muted};button{border:0;background:none;color:${({theme})=>theme.colors.accent};font-weight:700}`;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 
 export function LoginPage() {
   const dispatch = useAppDispatch();
@@ -104,7 +101,6 @@ export function LoginPage() {
   const language = useAppSelector((state) => state.settings.language);
   const [serverError, setServerError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
-<<<<<<< HEAD
   return (
     <Page>
       <Panel>
@@ -197,7 +193,6 @@ export function LoginPage() {
       </Panel>
     </Page>
   );
-=======
   return <Page><Panel>
     <Brand>NOVA <ShoppingBag className="bag" size={26}/></Brand>
     <Heading><h1>{t('welcome')}</h1><p>{t('loginSubtitle')}</p></Heading>
@@ -215,5 +210,4 @@ export function LoginPage() {
     </Formik>
     <Foot><span>NOVA Admin • FakeStoreAPI</span><button type="button" onClick={()=>dispatch(setLanguage(language === AppLanguage.Persian ? AppLanguage.English : AppLanguage.Persian))}>{language === AppLanguage.Persian ? t('english') : t('persian')}</button></Foot>
   </Panel></Page>;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 }

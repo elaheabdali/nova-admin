@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 
-<<<<<<< HEAD
 export const Button = styled.button<{
   $variant?: 'primary' | 'secondary' | 'ghost' | 'danger';
 }>`
@@ -170,7 +169,6 @@ export const EmptyState = styled.div`
     margin-bottom: 12px;
     opacity: 0.65;
   }
-=======
 export const Button = styled.button<{ $variant?: 'primary' | 'secondary' | 'ghost' | 'danger' }>`
   display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 42px; padding: 0 17px;
   border-radius: 11px; border: 1px solid transparent; font-weight: 700; transition: .18s ease;
@@ -224,5 +222,4 @@ export const Table = styled.table`
 export const EmptyState = styled.div`
   text-align:center; padding:48px 20px; color:${({theme})=>theme.colors.muted};
   svg { margin-bottom:12px; opacity:.65; }
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 `;

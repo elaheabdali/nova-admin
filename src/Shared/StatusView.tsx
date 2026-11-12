@@ -4,7 +4,6 @@ import { useTranslation } from './useTranslation';
 
 export function LoadingView() {
   const t = useTranslation();
-<<<<<<< HEAD
   return (
     <EmptyState>
       <LoaderCircle size={27} />
@@ -40,7 +39,6 @@ export function EmptyView() {
       <div>{t('empty')}</div>
     </EmptyState>
   );
-=======
   return <EmptyState><LoaderCircle size={27} /><div>{t('loading')}</div></EmptyState>;
 }
 export function ErrorView({ message, onRetry }: { message?: string | null; onRetry: () => void }) {
@@ -50,5 +48,4 @@ export function ErrorView({ message, onRetry }: { message?: string | null; onRet
 export function EmptyView() {
   const t = useTranslation();
   return <EmptyState><Inbox size={28} /><div>{t('empty')}</div></EmptyState>;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 }

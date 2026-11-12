@@ -7,7 +7,6 @@ import { useAppDispatch } from '../Redux/hooks';
 import { createUser } from '../Redux/usersSlice';
 import type { UserInput } from '../types';
 import { userSchema } from '../Validations/schemas';
-<<<<<<< HEAD
 import {
   Alert,
   Button,
@@ -202,7 +201,6 @@ export function CreateUserPage() {
       </Card>
     </>
   );
-=======
 import { Alert, Button, Card, Field, Input, PageTitle } from '../Shared/primitives';
 import { useTranslation } from '../Shared/useTranslation';
 import { ROUTES } from '../Routes/routePaths';
@@ -232,5 +230,4 @@ export function CreateUserPage() {
         <div className="footer"><Button type="button" $variant="secondary" onClick={()=>navigate(ROUTES.users)}>{t('cancel')}</Button><Button type="submit" disabled={isSubmitting}>{isSubmitting?t('loading'):<><BadgeCheck size={16}/>{t('save')}</>}</Button></div>
       </FormGrid>}</Formik></Card>
   </>;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 }

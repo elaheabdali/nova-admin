@@ -8,7 +8,6 @@ import { createProduct } from '../Redux/catalogSlice';
 import { productService } from '../Utils/services/productService';
 import type { ProductInput } from '../types';
 import { productSchema } from '../Validations/schemas';
-<<<<<<< HEAD
 import {
   Alert,
   Button,
@@ -225,7 +224,7 @@ export function CreateProductPage() {
       </Card>
     </>
   );
-=======
+
 import { Alert, Button, Card, Field, Input, PageTitle, Select, Textarea } from '../Shared/primitives';
 import { useTranslation } from '../Shared/useTranslation';
 import { ROUTES } from '../Routes/routePaths';
@@ -256,5 +255,4 @@ export function CreateProductPage() {
         <div className="footer"><Button type="button" $variant="secondary" onClick={()=>navigate(ROUTES.products)}>{t('cancel')}</Button><Button type="submit" disabled={isSubmitting}>{isSubmitting?t('loading'): <><BadgeCheck size={16}/>{t('save')}</>}</Button></div>
       </FormGrid>}</Formik></Card>
   </>;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 }

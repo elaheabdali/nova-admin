@@ -1,7 +1,6 @@
 import { AppLanguage } from '../types/Enums/AppLanguage';
 
 const fa = {
-<<<<<<< HEAD
   brand: 'NOVA',
   dashboard: 'داشبورد مدیریت',
   overview: 'مدیریت فروشگاه در یک نگاه',
@@ -137,7 +136,6 @@ const en: Record<keyof typeof fa, string> = {
   invalidUrl: 'Enter a valid image URL.',
   greeting: 'Hello, store administrator',
   account: 'Account',
-=======
   brand: 'NOVA', dashboard: 'داشبورد مدیریت', overview: 'مدیریت فروشگاه در یک نگاه',
   products: 'محصولات', users: 'کاربران', createProduct: 'افزودن محصول', createUser: 'افزودن کاربر',
   search: 'جستجو...', searchProducts: 'جستجوی محصول بر اساس عنوان یا دسته‌بندی', searchUsers: 'جستجوی کاربر بر اساس نام، ایمیل یا نام کاربری',
@@ -175,19 +173,15 @@ const en: Record<keyof typeof fa, string> = {
   categories: 'Categories', adminPanel: 'Admin panel', loginRequired: 'Sign in to view this page.', noImage: 'No image', optional: 'Optional',
   validationRequired: 'This field is required.', invalidEmail: 'Enter a valid email address.', minPassword: 'Password must be at least 6 characters.',
   invalidPrice: 'Price must be a positive number.', invalidUrl: 'Enter a valid image URL.', greeting: 'Hello, store administrator', account: 'Account',
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
   dashboardHint: 'Use the sidebar to manage your store data.',
 };
 
 export type TranslationKey = keyof typeof fa;
-<<<<<<< HEAD
 export const dictionaries: Record<
   AppLanguage,
   Record<TranslationKey, string>
 > = {
-=======
 export const dictionaries: Record<AppLanguage, Record<TranslationKey, string>> = {
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
   [AppLanguage.Persian]: fa,
   [AppLanguage.English]: en,
 };

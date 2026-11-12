@@ -1,6 +1,5 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-<<<<<<< HEAD
 import {
   BadgePlus,
   Boxes,
@@ -11,9 +10,7 @@ import {
   Users,
   ShoppingBag,
 } from 'lucide-react';
-=======
 import { BadgePlus, Boxes, Languages, LogOut, Moon, Sun, Users, ShoppingBag } from 'lucide-react';
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 import { useAppDispatch, useAppSelector } from '../Redux/hooks';
 import { setLanguage, setTheme } from '../Redux/settingsSlice';
 import { signedOut } from '../Redux/authSlice';
@@ -22,7 +19,6 @@ import { AppTheme } from '../types/Enums/AppTheme';
 import { ROUTES } from '../Routes/routePaths';
 import { useTranslation } from '../Shared/useTranslation';
 
-<<<<<<< HEAD
 const Shell = styled.div`
   min-height: 100vh;
 `;
@@ -124,7 +120,7 @@ const Toolbar = styled.div`
   align-items: center;
   gap: 10px;
 `;
-=======
+
 const Shell = styled.div`min-height:100vh;`;
 const Sidebar = styled.aside`
   position:fixed; inset-block:0; inset-inline-end:0; width:250px; padding:25px 18px; background:${({theme})=>theme.colors.sidebar}; color:#f8fafc; display:flex; flex-direction:column; z-index:5;
@@ -139,14 +135,12 @@ const Header = styled.header`height:76px;padding:0 34px;background:${({theme})=>
 const Content = styled.div`padding:32px 34px;max-width:1500px;margin:0 auto;`;
 const IconButton = styled.button`border:1px solid ${({theme})=>theme.colors.border};background:${({theme})=>theme.colors.surfaceAlt};color:${({theme})=>theme.colors.text};width:39px;height:39px;border-radius:10px;display:grid;place-items:center;`;
 const Toolbar = styled.div`display:flex;align-items:center;gap:10px;`;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 
 export function AdminLayout() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const t = useTranslation();
   const { language, theme } = useAppSelector((state) => state.settings);
-<<<<<<< HEAD
   const onLogout = () => {
     dispatch(signedOut());
     navigate(ROUTES.login, { replace: true });
@@ -246,7 +240,7 @@ export function AdminLayout() {
       </Main>
     </Shell>
   );
-=======
+
   const onLogout = () => { dispatch(signedOut()); navigate(ROUTES.login, { replace: true }); };
   return <Shell>
     <Sidebar>
@@ -268,5 +262,4 @@ export function AdminLayout() {
       <Content><Outlet /></Content>
     </Main>
   </Shell>;
->>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
 }
