@@ -16,8 +16,12 @@ axiosInstance.interceptors.request.use((config) => {
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error: AxiosError<{ message?: string }>) => {
+<<<<<<< HEAD
     const message =
       error.response?.data?.message || error.message || 'Request failed';
+=======
+    const message = error.response?.data?.message || error.message || 'Request failed';
+>>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
     return Promise.reject(new Error(message));
   },
 );

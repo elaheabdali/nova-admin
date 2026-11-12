@@ -1,6 +1,7 @@
 import { AppLanguage } from '../types/Enums/AppLanguage';
 
 const fa = {
+<<<<<<< HEAD
   brand: 'NOVA',
   dashboard: 'داشبورد مدیریت',
   overview: 'مدیریت فروشگاه در یک نگاه',
@@ -136,14 +137,57 @@ const en: Record<keyof typeof fa, string> = {
   invalidUrl: 'Enter a valid image URL.',
   greeting: 'Hello, store administrator',
   account: 'Account',
+=======
+  brand: 'NOVA', dashboard: 'داشبورد مدیریت', overview: 'مدیریت فروشگاه در یک نگاه',
+  products: 'محصولات', users: 'کاربران', createProduct: 'افزودن محصول', createUser: 'افزودن کاربر',
+  search: 'جستجو...', searchProducts: 'جستجوی محصول بر اساس عنوان یا دسته‌بندی', searchUsers: 'جستجوی کاربر بر اساس نام، ایمیل یا نام کاربری',
+  title: 'عنوان محصول', description: 'توضیحات', price: 'قیمت', category: 'دسته‌بندی', categoryUnavailable: 'دسته‌بندی‌ها دریافت نشدند؛ نام دسته را وارد کنید.', image: 'آدرس تصویر',
+  firstName: 'نام', lastName: 'نام خانوادگی', username: 'نام کاربری', email: 'ایمیل', password: 'رمز عبور', phone: 'شماره تماس',
+  imageUrl: 'https://example.com/image.jpg', save: 'ثبت اطلاعات', cancel: 'انصراف', logout: 'خروج از حساب',
+  login: 'ورود به پنل', welcome: 'خوش آمدید', loginSubtitle: 'برای ورود به پنل مدیریت اطلاعات حساب خود را وارد کنید.',
+  loginError: 'ورود انجام نشد. نام کاربری و رمز عبور حساب FakeStoreAPI را بررسی کنید.',
+  loading: 'در حال دریافت اطلاعات...', loadError: 'دریافت اطلاعات با خطا مواجه شد.', empty: 'موردی برای نمایش وجود ندارد.',
+  retry: 'تلاش مجدد', actions: 'عملیات', id: 'شناسه', productName: 'نام محصول', userName: 'نام و نام خانوادگی',
+  successProduct: 'درخواست ثبت محصول با موفقیت انجام شد. محصول به فهرست فعلی اضافه شد.',
+  successUser: 'درخواست ثبت کاربر با موفقیت انجام شد. کاربر به فهرست فعلی اضافه شد.',
+  failed: 'عملیات انجام نشد. لطفاً دوباره تلاش کنید.',
+  language: 'زبان', theme: 'پوسته', light: 'روشن', dark: 'تیره', persian: 'فارسی', english: 'English',
+  productsSubtitle: 'فهرست و مدیریت محصولات فروشگاه', usersSubtitle: 'فهرست کاربران ثبت‌شده در سرویس',
+  totalProducts: 'تعداد محصولات', totalUsers: 'تعداد کاربران', categories: 'دسته‌بندی‌ها', adminPanel: 'پنل مدیریت',
+  loginRequired: 'برای مشاهده این صفحه ابتدا وارد شوید.', noImage: 'بدون تصویر', optional: 'اختیاری',
+  validationRequired: 'این فیلد الزامی است.', invalidEmail: 'فرمت ایمیل معتبر نیست.', minPassword: 'رمز عبور باید حداقل ۶ کاراکتر باشد.',
+  invalidPrice: 'قیمت باید عددی مثبت باشد.', invalidUrl: 'آدرس تصویر معتبر نیست.',
+  greeting: 'سلام، مدیر فروشگاه', account: 'حساب کاربری', dashboardHint: 'از منوی سمت راست برای مدیریت اطلاعات استفاده کنید.',
+};
+
+const en: Record<keyof typeof fa, string> = {
+  brand: 'NOVA', dashboard: 'Admin dashboard', overview: 'Store management at a glance', products: 'Products', users: 'Users',
+  createProduct: 'Add product', createUser: 'Add user', search: 'Search...', searchProducts: 'Search products by title or category',
+  searchUsers: 'Search users by name, email or username', title: 'Product title', description: 'Description', price: 'Price',
+  category: 'Category', categoryUnavailable: 'Categories could not be loaded; enter a category name.', image: 'Image URL', firstName: 'First name', lastName: 'Last name', username: 'Username', email: 'Email',
+  password: 'Password', phone: 'Phone number', imageUrl: 'https://example.com/image.jpg', save: 'Save details', cancel: 'Cancel',
+  logout: 'Sign out', login: 'Sign in', welcome: 'Welcome back', loginSubtitle: 'Enter your account credentials to access the admin panel.',
+  loginError: 'Login failed. Check your FakeStoreAPI account username and password.', loading: 'Loading data...', loadError: 'Something went wrong while loading data.',
+  empty: 'Nothing to display.', retry: 'Try again', actions: 'Actions', id: 'ID', productName: 'Product name', userName: 'Full name',
+  successProduct: 'Product POST succeeded. The product was added to the current list.', successUser: 'User POST succeeded. The user was added to the current list.',
+  failed: 'The operation failed. Please try again.', language: 'Language', theme: 'Theme', light: 'Light', dark: 'Dark', persian: 'فارسی', english: 'English',
+  productsSubtitle: 'Browse and manage store products', usersSubtitle: 'Users returned by the service', totalProducts: 'Total products', totalUsers: 'Total users',
+  categories: 'Categories', adminPanel: 'Admin panel', loginRequired: 'Sign in to view this page.', noImage: 'No image', optional: 'Optional',
+  validationRequired: 'This field is required.', invalidEmail: 'Enter a valid email address.', minPassword: 'Password must be at least 6 characters.',
+  invalidPrice: 'Price must be a positive number.', invalidUrl: 'Enter a valid image URL.', greeting: 'Hello, store administrator', account: 'Account',
+>>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
   dashboardHint: 'Use the sidebar to manage your store data.',
 };
 
 export type TranslationKey = keyof typeof fa;
+<<<<<<< HEAD
 export const dictionaries: Record<
   AppLanguage,
   Record<TranslationKey, string>
 > = {
+=======
+export const dictionaries: Record<AppLanguage, Record<TranslationKey, string>> = {
+>>>>>>> b62e56c9aafddd23149e9786257db300dd428d16
   [AppLanguage.Persian]: fa,
   [AppLanguage.English]: en,
 };
